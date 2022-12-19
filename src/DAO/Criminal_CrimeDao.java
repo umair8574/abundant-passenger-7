@@ -1,10 +1,11 @@
-package com.Dao;
+package com.DAO;
 
 import java.util.List;
 
-import com.Bean.Criminal;
-import com.Bean.Criminal_Crime;
+import com.bean_classes.Crime;
+import com.bean_classes.Criminal_Crime;
 import com.Exception.CriminalException;
+
 
 public interface Criminal_CrimeDao {
 	public String AddCriminalCrime(int crid,int  cid) ;

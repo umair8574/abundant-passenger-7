@@ -1,0 +1,44 @@
+
+mysql> use criminal
+Database changed
+mysql> desc crime;
++----------------+--------------+------+-----+---------+----------------+
+| Field          | Type         | Null | Key | Default | Extra          |
++----------------+--------------+------+-----+---------+----------------+
+| Crid           | int          | NO   | PRI | NULL    | auto_increment |
+| Cdate          | date         | YES  |     | NULL    |                |
+| Crplace        | varchar(20)  | YES  |     | NULL    |                |
+| crname         | varchar(20)  | YES  |     | NULL    |                |
+| Victims        | varchar(20)  | YES  |     | NULL    |                |
+| Description    | varchar(200) | YES  |     | NULL    |                |
+| Suspected_name | varchar(20)  | YES  |     | NULL    |                |
+| Case_Status    | varchar(20)  | YES  |     | NULL    |                |
++----------------+--------------+------+-----+---------+----------------+
+8 rows in set (0.07 sec)
+
+mysql> desc criminal;
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| Cid      | int          | NO   | PRI | NULL    | auto_increment |
+| Cname    | varchar(20)  | YES  |     | NULL    |                |
+| Cage     | int          | YES  |     | NULL    |                |
+| Gender   | varchar(20)  | YES  |     | NULL    |                |
+| Address  | varchar(200) | YES  |     | NULL    |                |
+| facemark | varchar(20)  | YES  |     | NULL    |                |
+| carea    | varchar(100) | YES  |     | NULL    |                |
+| Crname   | varchar(20)  | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+8 rows in set (0.00 sec)
+
+
+mysql> desc criminal_crime;
++-------+------+------+-----+---------+-------+
+| Field | Type | Null | Key | Default | Extra |
++-------+------+------+-----+---------+-------+
+| Crid  | int  | YES  | MUL | NULL    |       |
+| cid   | int  | YES  | MUL | NULL    |       |
++-------+------+------+-----+---------+-------+
+2 rows in set (0.00 sec)
+
+

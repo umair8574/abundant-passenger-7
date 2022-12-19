@@ -1,4 +1,4 @@
-package com.Dao;
+package com.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -7,7 +7,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.Bean.Crime;
+import com.bean_classes.Crime;
 import com.Exception.CrimeException;
 import com.Utility.DBUtil;
 

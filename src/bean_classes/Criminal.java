@@ -1,4 +1,4 @@
-package com.Bean;
+package com.bean_classes;
 
 public class Criminal {
 	

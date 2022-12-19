@@ -1,8 +1,8 @@
-package com.Dao;
+package com.DAO;
 
 import java.util.List;
 
-import com.Bean.Crime;
+import com.bean_classes.Crime;
 import com.Exception.CrimeException;
 
 public interface CrimeDao {
